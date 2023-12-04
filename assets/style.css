@@ -93,6 +93,10 @@ blockquote::after {
     display: none!important;
 }
 
+.skiptranslate {
+    display: none;
+}
+
 /* -------------------------------------------------------------------------- */
 /*	2. Page organization
 /* -------------------------------------------------------------------------- */
@@ -132,6 +136,7 @@ blockquote::after {
     bottom: 20px;
     right: 20px;
     border: 1px solid black;
+    background-color: white;
     padding: 10px;
     border-radius: 5px;
 }
