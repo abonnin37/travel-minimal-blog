@@ -47,6 +47,53 @@ blockquote::after {
 }
 
 /* -------------------------------------------------------------------------- */
+
+/*	1. Navigation
+/* -------------------------------------------------------------------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: white;
+    text-align: center;
+    /*box-shadow: 0 4px 8px 2px rgb(40 40 40 / 20%);*/
+}
+
+.locale-selector {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+
+.locale-selector-item {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.locale-selector-item svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#google_language_translator {
+    display: none!important;
+}
+
+/* -------------------------------------------------------------------------- */
 /*	3. Page organisation
 /* -------------------------------------------------------------------------- */
 .container {
