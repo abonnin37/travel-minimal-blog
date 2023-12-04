@@ -18,12 +18,14 @@ function travel_minimal_blog_register_assets()
     wp_register_style('bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css");
     wp_register_script('bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js", [], false, true);
     wp_register_script('travel_minimal_blog_traduction', get_template_directory_uri() . "/assets/handle-traduction.js", ['wp-i18n'], false, true);
+    wp_register_script('travel_minimal_blog_scroll_to_last_post', get_template_directory_uri() . "/assets/scroll-to-last-post.js", [], false, true);
 
     wp_enqueue_style('bootstrap');
     wp_enqueue_style('fontawesome');
     wp_enqueue_style('travel_minimal_blog_style');
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('travel_minimal_blog_traduction');
+    wp_enqueue_script('travel_minimal_blog_scroll_to_last_post');
 }
 
 add_action('init', 'travel_minimal_blog_init');

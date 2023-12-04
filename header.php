@@ -13,4 +13,5 @@
 </head>
 <body>
     <?php get_template_part('parts/navigation') ?>
+    <?php get_template_part('parts/scroll-to-last-post') ?>
     <div class="container">
